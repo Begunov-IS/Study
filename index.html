@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Филипок</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="main-header">
+                    <div class="logo-header">
+                        <img src="pictures/logo_header.png" alt="логотип для хедера">
+                    </div>
+                    <div></div>
+                    <div class="menu-btn-header">
+                        <a href="">Home</a>
+                        <a href="">How we work</a>
+                        <a href="">Credit request</a>
+                        <a href="">FAQ</a>
+                        <a href="">Comments</a>
+                        <a href="">Contact us</a>
+                        <div class="lang-selector">
+                            <img src="pictures/fl_lang.png" alt="флаг Финляндии(наверное)">
+                            <select>
+                            
+                                <option value="option1">  FL</option>
+                                <option value="option2">ENG</option>
+                            </select>
+                        </div>
+                        <button class="login-btn">Log in</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </main>
+
+
+    <div class="round_calc">
+        <div class="round_calc-upper"><p>Compare loans in <br> <span class="lightblue"> just 2 minutes</span>
+        </p>
+        </div>
+        <div class="round_calc-middle">
+            <div><img src="pictures/money-4coins.png" alt="4 монетки"></div>
+            <div class="circle-div">
+                <div class="circle">
+                    <div class="circle_content">
+                        <div class="calculation-text-upper">
+                        <p>What is the amount<br> of money you want to receive?</p>
+                         </div>
+                         <div class="circle-container">
+                            <div class="amount-text"><p>5 000 ₽</p></div>
+                            <input type="range" min="100" max="10000" value="5000" class="slider" id="amountRange">
+                            <div class="range-labels">
+                              <p>100 ₽</p>
+                              <p>10000 ₽</p>
+                            </div>
+                          </div>
+                          
+                        <div class="calculation-btn"> 
+                            <button>Get 5 000 ₱</button>
+                        </div>
+                        <div class="calculation-text-bottom"> 
+                            <p>A free and non-binding inquiry.
+                            The final amount of your loan will be 
+                            communicated to you within 24 business hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img src="pictures/money-two_banknotes.png" alt="две банкноты"></div>
+        </div>
+    </div>
+    <div class="round_calc-bottom">
+        <div><img src="pictures/money-letter.png" alt="письмо с деньгами"></div>
+        <div><img src="pictures/money-coins_bag.png" alt="мешок с деньгами"></div>
+    </div>
+
+    <div class="how-works">
+            <p class="how-works-maintitle">How does it work?</p>
+        <div id="works-step1" class="works-step">
+            <div id="step1-discription" class="step-discription">
+                <div id="works-num"><img src="pictures/works-num1.png" alt="цифра 1"></div>
+                <div id="step1-text" class="step-text">
+                    <div class="how-works-title">Fill out the application form on our website</div>
+                    <div class="how-works-subtitle">All you need is a phone number and 2 minutes of your time.</div>
+                </div>
+            </div>
+            <div id="step1-pic" class="step-pic"><img src="pictures/works-step1-pic.png" alt=""></div>
+        </div>
+        <div id="works_step2" class="works-step">
+            <div id="step2-discription" class="step-discription">
+                <div id="works-num"><img src="pictures/works-num2.png" alt="цифра 2"></div>
+                <div id="step2-text" class="step-text">
+                    <div class="how-works-title">Get the best deals on the market</div>
+                    <div class="how-works-subtitle">We compare dozens of lenders to select the ones that offer the best terms and 
+                        are ready to approve your application.</div>
+                </div>
+            </div>
+            <div id="step2-pic" class="step-pic"><img src="pictures/works-step2-pic.png" alt=""></div>
+        </div>
+        <div id="works_step3" class="works-step">
+            <div id="step3-discription" class="step-discription">
+                <div id="works-num"><img src="pictures/works-num3.png" alt="цифра 3"></div>
+                <div id="step3-text" class="step-text">
+                    <div class="how-works-title">Get your money and enjoy life</div>
+                    <div class="how-works-subtitle">Apply for the loan service of your choice, sign the agreement and get the money in your account 
+                        No more filling out forms on site after site.</div>
+                </div>
+            </div>
+            <div id="step3-pic" class="step-pic"><img src="pictures/works-step3-pic.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="money-buttons">
+        <p>How much money do you need?</p>
+        <div class="btn-rows">
+            <button class="money-btn" id="money-btn1">100 ₱</button>
+            <button class="money-btn" id="money-btn2">1 000 ₱</button>
+            <button class="money-btn" id="money-btn3">2 500 ₱</button>
+            <button class="money-btn" id="money-btn4">5 000 ₱</button>
+            <button class="money-btn" id="money-btn5">100 ₱</button>
+            <button class="money-btn" id="money-btn6">1 000 ₱</button>
+            <button class="money-btn" id="money-btn7">2 500 ₱</button>
+            <button class="money-btn" id="money-btn8">5 000 ₱</button>
+            <button class="money-btn" id="money-btn9">100 ₱</button>
+            <button class="money-btn" id="money-btn10">1 000 ₱</button>
+            <button class="money-btn" id="money-btn11">2 500 ₱</button>
+            <button class="money-btn" id="money-btn12">5 000 ₱</button>
+        </div>
+    </div>
+
+    <div class="about-service">
+        <p class="about-service-header">Best service at the fairest price:<br>Name company reinvents the credit marketplace</p>
+        <div class="about-service-content">
+                <div class="left-faq">
+                    <button class="faq-question" id="faq-question1">Открыто для клиентов стран СНГ, Филлипин, Тайланда и ОАЭ</button>
+                    <button class="faq-question" id="faq-question2">Мгновенные выплаты наличными или переводом</button>
+                    <button class="faq-question" id="faq-question3">Никаких обязательств по времени</button>
+                    <button class="faq-question" id="faq-question4">Все виды переводов</button>
+                    <button class="faq-question" id="faq-question5">Помогаем с кредитной историей</button>
+                </div>
+                <div class="about-service-description">
+                    <img src="pictures/about-service-description.png" alt="">
+                    <p>Lörem ipsum vandrande skolbuss josk ankarbarn ifall lajok båra. Onde gigaligen. 
+                        Disertad hyjens körat, infrar. Bengen hubot. Donde bidol.</p>
+                </div>
+            </div>
+        <button class="request-credit">Request your credit</button>
+        
+    </div>
+
+    <div class="feedbacks">
+        <h2>What our customers say</h2>
+        <div class="feedbacks-content">
+            <div class="feedback-menu">
+                <div class="feedback-btns">
+                    <button class="feedback-btn">
+                        <img src="pictures/feedback_btn_left.png" alt="налево">
+                    </button>
+                    <button class="feedback-btn">
+                        <img src="pictures/feedback_btn_right.png" alt="направо">
+                    </button>
+                </div>
+                <div class="partner-cards">
+                    <div class="partner-card" id="partner-card1">
+                        <div class="logo-partner" id="logo-parnter1">
+                            <img src="pictures/best_partner_logo.png" alt="">
+                        </div>
+                        <div class="stars-partner">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                        </div>
+                        <div class="partner-card-text">
+                            <p>5.0  |  24 отзыва</p>
+                        </div>
+                    </div>
+                    <div class="partner-card" id="partner-card2">
+                        <div class="logo-partner" id="logo-parnter2">
+                            <img src="pictures/best_partner_logo.png" alt="">
+                        </div>
+                        <div class="stars-partner">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                            <img src="pictures/star_feedback.svg" alt="звезда">
+                        </div>
+                        <div class="partner-card-text">
+                            <p>5.0  |  24 отзыва</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-about-person">
+                <div class="feedback-person-content">
+                    <div class="feedback-person-card">
+                        <img class="about-person-bg" src="pictures/feedback-person-cards.png" alt="карточки с описанием партнеров">
+                        <p class="person-quote">«Lörem ipsum megana laliga mononde ninyt. Denäsamma den, inte ott föbelt i odat. 
+                            Pora sävin för att trinis inklusive hupase. Fotokrati eung och pofung i ovida spessade. 
+                            Divung pappafeminist.»</p>
+                        <div class="person-info">
+                            <p class="person-name">Имя Фамилия</p>
+                            <p class="person-company">Должность/компания</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-person-name">
+                </div>
+            </div>
+        </div>
+
+        <div class="regular-partners">
+            <div class="regular-partners-content">
+               <div class="regular-partners-title">Our regular partners</div>
+                 <div class="regular-partners-text">Lörem ipsum pseudoheten reaktig. Noladat lek. Jörad pode. Hexav virat för vina. Semifiering belogi dimer, triligt: paragosande.<br>
+                     Gis nyrat: kvasimäll. Sajörade maheten. Gigande grindstad. Krost juns dekaninera. Oktig sars sos speck. 
+                     </div>
+            </div>
+            <div class="regular-partners-logos">
+                <div></div>
+                <div><img src="pictures/moneycat-logo.png" alt="MoneyCat"></div>
+                <div><img src="pictures/cashexpress-logo.png" alt="Cash Express"></div>
+                <div><img src="pictures/digido-logo.png" alt="Digido"></div>
+                <div><img src="pictures/finbro-logo.png" alt="Finbro"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-upper">
+            <div class="footer-questions">
+                <div class="title">Any questions?</div>
+                <div class="text">Do you have a question? We have the answer! 
+                    Online help is the easiest and fastest way to get answers 
+                    to your questions 24/7.</div>
+                    <button>Read the FAQs</button>
+            </div>
+            <div class="footer-contacting-us">
+                <div class="title">Contacting us</div>
+                <div class="text">Do you want to contact us? Do you need information? 
+                    Our experts are available every day to support you with your queries 
+                    and questions, ensuring you a friendly and quality service.</div>
+                <button class="button">Contact us</button>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="footer-about-us">
+                <div class="title"><img src="pictures/logo_header.png" alt="логотип для футера"></div>
+                <div class="text">Lörem ipsum våsalig biode pegt semiv. Ant stenodyligt. 
+                    Hubot seng. Mjuta plartad och egokär vigäde. Nigåk der i jopafaktigt supravis. 
+                    Mjuta plartad och egokär vigäde. Nigåk der i jopafaktigt supravis. 
+                    Mjuta plartad och egokär vigäde. </div>
+            </div>
+            <div class="footer-docs-socials">
+                <div class="docs">
+                    <div>Privacy Policy</div>
+                    <div>Terms of use</div>
+                    <div>Cookies</div>
+                    <div>Unsubscribe</div>           
+                </div>
+                <div class="text">Lörem ipsum nölagen påmigt rist delogi topsa. Halmdocka bet. 
+                    Diborade sedorade ovis inte dialiga faheten. Asenat rinibel eftersom diahur 
+                    för nymäs och onde. Ande faktiga, varäsade ting ter. diahur för nymäs och onde.
+                    Ande faktiga, varäsade ting ter. Ande faktiga, varäsade ting ter.</div>
+                <div class="socials">
+                <div><img src="pictures/facebook.png" alt="facebook"></div>
+                <div><img src="pictures/youtube.png" alt="youtube"></div>
+                <div><img src="pictures/twitter.png" alt="twitter"></div>
+                <div><img src="pictures/instagram.png" alt="instagram"></div>
+            </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
