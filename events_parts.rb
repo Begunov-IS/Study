@@ -77,18 +77,46 @@ loop do
       participant_choice = gets.chomp.downcase
     end
 
-    puts "So, your event name: #{event_name}\nEvent place: #{event_place}\nEvent seats: #{event_seats}\n 
-    Event participants: #{event_participants}\n - is it true?[yes/no]"
+    puts "So, your event name: #{event_name}\nEvent place: #{event_place}\nEvent seats: #{event_seats}\nEvent participants: #{event_participants}\n - is it true?[yes/no]"
     event_approve = gets.chomp.downcase
     if event_approve == "yes"
       new_event = Event.new("#{event_name}", "#{event_place}", "#{event_seats}", event_participants)
       instance_variable_set("@#{event_name}_userid#{user_id}", new_event)
-      puts "Okay, new event is added:\n#{#{event_name}_userid#{user_id}.event_name}" #и что тут делать теперь, как к переменной обратиться и вывести ее, если названия я не знаю
-
-
-
+      puts "Okay, new event is added:\n#{new_event}" 
+    end
   end
 
+when "2", "add_participant"
+  puts "Okay, please, tell the name of event for participants you want to add:"
+  wanted_event_name = gets.chomp.capitalize
+  loop do #тут цикл ввода начинает ДОПИСАТЬ!!!
 
-  break if user_input == "exit"
+    if instance_variable_defined?("@#{wanted_event_name}_userid#{user_id}")
+      wnated_event = instance_variable_get("@#{wanted_event_name}_userid#{user_id}")
+      puts "Okay, here is info about your event:\nName: #{wnated_event.name}\nPlace: #{wnated_event.name}\nSeats: #{wnated_event.seats_number}\nParticipants: #{wnated_event.participants}"
+      puts "Do you wnat to add participants for your event? [Yes/No]"
+      participant_choice = gets.chomp.downcase
+      unless defined?(event_participants)
+        event_participants = []
+      end
+      while participant_choice == "yes"
+        participant_approve = ""
+        until participant_approve == "yes" || participant_approve == "exit"
+        puts "Well, enter Name, Sername and Email of participant. Please divide it with one gap:"
+        event_participant = gets.chomp.split
+        puts "You entered:\nName: #{event_participant[0]}\nSername: #{event_participant[1]}\nEmail: #{event_participant[2]}\n - is it true?[yes/no]"
+        participant_approve = gets.chomp.downcase
+        end
+        if participant_approve == "yes"
+        event_participants.push({name: "#{event_participant[0]}", sername: "#{event_participant[1]}", email: "#{event_participant[2]}"})
+        puts "Массив участников: #{event_participants}"
+        end
+        puts "Do you want to add another participant? [yes/no]"
+        participant_choice = gets.chomp.downcase
+      end
+    else puts "I can't find the event you want. Please try to enter the name of your event again:"
+#тут цикл ввода заканчивается
+
+  end
+  break if user_input == "exit" || user_input == "Exit"
 end
